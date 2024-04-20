@@ -4,23 +4,24 @@
 
 <br/>
 
+
 <div align = "left">
 
-Install Neovim version 9.0 or more
+    Install **Neovim** version 9.0 or more
 
-sudo apt-get install snapd
+    sudo apt-get install snapd
 
-sudo apt-get install snap
+    sudo apt-get install snap
 
-sudo apt-get install curl
+    sudo apt-get install curl
 
-sudo snap install nvim --classic
+    sudo snap install nvim --classic
 
-Install ripgrep
+    Install ripgrep
 
-Install npm
+    Install npm
 
-Install node
+    Install node
 
 <div/>
 
