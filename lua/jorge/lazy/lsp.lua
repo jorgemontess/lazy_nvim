@@ -23,6 +23,7 @@ return {
                 "rust_analyzer",
                 "tsserver",
                 "pyright",
+                "lua_ls",
             }
         })
 
