@@ -58,4 +58,5 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- nvim-tree
 --vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
-vim.keymap.set("n", "<leader>e", ":Ex<cr>", opts)
+vim.keymap.set("n", "<leader>e", ":Neotree<cr>", opts)
+--vim.keymap.set("n", "<leader>e", ":Ex<cr>", opts)
