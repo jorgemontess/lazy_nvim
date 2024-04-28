@@ -40,6 +40,8 @@ vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 
 
 -- This is going to get me cancelled
+-- TODO: QUE SIGNIFICA ESTO?
+
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
 
