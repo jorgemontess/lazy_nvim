@@ -65,7 +65,7 @@ return {
                     },
                 })
 
-                --TODO: SET COLORSCHEME
+                --SET COLORSCHEME
                 vim.cmd("colorscheme tokyonight")
 
             end

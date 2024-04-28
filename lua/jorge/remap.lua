@@ -40,9 +40,9 @@ vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 
 
 -- This is going to get me cancelled
--- TODO: QUE SIGNIFICA ESTO?
 
-vim.keymap.set("i", "<C-c>", "<Esc>")
+--vim.keymap.set("i", "<C-c>", "<Esc>")
+vim.keymap.set("i", "jk", "<Esc>") -- Exit insert mode with jk
 
 
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
@@ -62,3 +62,10 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 --vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 vim.keymap.set("n", "<leader>e", ":Neotree<cr>", opts)
 --vim.keymap.set("n", "<leader>e", ":Ex<cr>", opts)
+
+
+
+-- vim.keymap.set("n", "<leader>sv", "<C-w>v") -- Split window vertically
+-- vim.keymap.set("n", "<leader>sh", "<C-w>s") -- Split window horizontally
+-- vim.keymap.set("n", "<leader>se", "<C-w>=") -- Split window equal size
+-- vim.keymap.set("n", "<leader>sx", "<cmd>close<CR>") -- Close current split window
