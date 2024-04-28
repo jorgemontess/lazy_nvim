@@ -42,6 +42,31 @@ return {
           {text = "󰌵", texthl = "DiagnosticSignHint"})
 
         require("neo-tree").setup({
+
+           source_selector = {
+            winbar = true,
+            statusline = true
+          },
+        
+        --TODO: Arreglar Auto close
+          
+          event_handlers = {
+
+            {
+              event = "file_opened",
+              handler = function(file_path)
+                 
+                print('MAMAHUEVOOO', file_path)
+                -- auto close
+                --vimc.cmd("Neotree close")
+                -- OR
+                require("neo-tree.command").execute({ action = "close" })
+              end
+            },
+
+          },
+          
+          
           close_if_last_window = false, -- Close Neo-tree if it is the last window left in the tab
           popup_border_style = "rounded",
           enable_git_status = true,
