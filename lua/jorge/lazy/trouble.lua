@@ -1,6 +1,14 @@
 return {
     "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
+    keys = {
+
+      { "<leader>xx", "<cmd>TroubleToggle<CR>", desc = "Open/close trouble list" },
+      { "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<CR>", desc = "Open workspace_diagnostics" },
+      { "<leader>xd", "<cmd>TroubleToggle document_diagnostics<CR>", desc = "Open document_diagnostics" },
+      { "<leader>xl", "<cmd>TroubleToggle loclist<CR>", desc = "Open location list" },
+
+    },
     opts = {
         position = "bottom", -- position of the list can be: bottom, top, left, right
         height = 10, -- height of the trouble list when position is top or bottom
