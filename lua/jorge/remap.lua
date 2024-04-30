@@ -26,8 +26,8 @@ vim.keymap.set("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Better window navigation
 vim.keymap.set("n", "<C-h>", "<C-w>h", opts)
---vim.keymap.set("n", "<C-j>", "<C-w>j", opts)
---vim.keymap.set("n", "<C-k>", "<C-w>k", opts)
+vim.keymap.set("n", "<C-j>", "<C-w>j", opts)
+vim.keymap.set("n", "<C-k>", "<C-w>k", opts)
 vim.keymap.set("n", "<C-l>", "<C-w>l", opts)
 
 
@@ -45,8 +45,8 @@ vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 vim.keymap.set("i", "jk", "<Esc>") -- Exit insert mode with jk
 
 
-vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
-vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
+--vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
+--vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
@@ -68,4 +68,5 @@ vim.keymap.set("n", "<leader>e", ":Neotree<cr>", opts)
 -- vim.keymap.set("n", "<leader>sv", "<C-w>v") -- Split window vertically
 -- vim.keymap.set("n", "<leader>sh", "<C-w>s") -- Split window horizontally
 -- vim.keymap.set("n", "<leader>se", "<C-w>=") -- Split window equal size
--- vim.keymap.set("n", "<leader>sx", "<cmd>close<CR>") -- Close current split window
+-- vim.keymap.set("n", "<leader>sx", "<cmd>close<CR>") -- Close window equal size
+--

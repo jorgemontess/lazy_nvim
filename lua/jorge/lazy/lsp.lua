@@ -30,7 +30,7 @@ return {
             }
         })
 
-        
+
         -- Setup language servers.
         local lspconfig = require('lspconfig')
         lspconfig.pyright.setup {}
@@ -72,7 +72,7 @@ return {
                 vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
             end,
         })
-        
+
         -- CMP configuration
         local cmp = require('cmp')
         local lspkind = require('lspkind')
@@ -91,7 +91,7 @@ return {
             },
             window = {},
             mapping = cmp.mapping.preset.insert({
-                
+
                 ['<C-k>'] = cmp.mapping.select_prev_item(),   -- Select previous suggestion
                 ['<C-j>'] = cmp.mapping.select_next_item(),   -- Select next suggestion
                 ['<C-b>'] = cmp.mapping.scroll_docs(-4),
@@ -117,7 +117,7 @@ return {
                 { name = 'buffer' },
             })
         })
-      
+
         formatting = {
           format = lspkind.cmp_format({
             maxwidth = 50,
@@ -150,6 +150,15 @@ return {
         require('lspconfig')['tsserver'].setup {
             capabilities = capabilities
         }
+
+        require('lspconfig')['pyright'].setup {
+            capabilities = capabilities
+        }
+
+        require('lspconfig')['lua_ls'].setup {
+            capabilities = capabilities
+        }
+
 
 
     end
