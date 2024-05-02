@@ -3,9 +3,9 @@
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
-vim.opt.tabstop = 2
-vim.opt.softtabstop = 2
-vim.opt.shiftwidth = 2
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.smartindent = true
 
@@ -27,10 +27,9 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = "90"
+vim.opt.colorcolumn = "80"
 
-vim.opt.guifont = { "Source Code Pro", ":h50" }
-
+--vim.opt.guifont = { "Source Code Pro", ":h50" }
 
 --vim.opt.clipboard:append("unnamedplus") -- Use system clipboard as default register
 --vim.opt.backspace = "indent,eol,start" -- allow backspace on indent end of line or instert
