@@ -25,6 +25,7 @@ return {
             ensure_installed = {
                 "rust_analyzer",
                 "tsserver",
+                "gopls",
                 "pyright",
                 "lua_ls",
             }
@@ -118,7 +119,7 @@ return {
             })
         })
 
-        formatting = {
+        cmp.setup.formatting = {
           format = lspkind.cmp_format({
             maxwidth = 50,
             ellipsis_char = "...",
@@ -148,6 +149,10 @@ return {
         local capabilities = require('cmp_nvim_lsp').default_capabilities()
         -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
         require('lspconfig')['tsserver'].setup {
+            capabilities = capabilities
+        }
+
+        require('lspconfig')['gopls'].setup {
             capabilities = capabilities
         }
 
