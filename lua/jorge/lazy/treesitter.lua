@@ -19,6 +19,7 @@ return{
                 "scss",
                 "sql",
                 "php",
+                "astro",
                 "http",
                 "gitcommit",
                 "gitignore",
