@@ -24,6 +24,10 @@ vim.keymap.set("n", "<S-l>", ":bnext<CR>", opts)
 vim.keymap.set("n", "<S-h>", ":bprevious<CR>", opts)
 
 
+-- Copilot remaps
+vim.keymap.set("n", "<leader>cp", ":Copilot disable<CR>", opts)
+vim.keymap.set("n", "<leader>op", ":Copilot enable<CR>", opts)
+
 -- Better window navigation
 vim.keymap.set("n", "<C-h>", "<C-w>h", opts)
 vim.keymap.set("n", "<C-j>", "<C-w>j", opts)
