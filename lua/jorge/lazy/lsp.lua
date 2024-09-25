@@ -24,7 +24,7 @@ return {
         require("mason-lspconfig").setup({
             ensure_installed = {
                 "rust_analyzer",
-                "tsserver",
+                "ts_ls",
                 "gopls",
                 "pyright",
                 "lua_ls",
@@ -36,7 +36,7 @@ return {
         -- Setup language servers.
         local lspconfig = require('lspconfig')
         lspconfig.pyright.setup {}
-        lspconfig.tsserver.setup {}
+        lspconfig.ts_ls.setup {}
         lspconfig.rust_analyzer.setup {
             -- Server-specific settings. See `:help lspconfig-setup`
             settings = {
@@ -149,7 +149,7 @@ return {
         -- Set up lspconfig.
         local capabilities = require('cmp_nvim_lsp').default_capabilities()
         -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-        require('lspconfig')['tsserver'].setup {
+        require('lspconfig')['ts_ls'].setup {
             capabilities = capabilities
         }
 
