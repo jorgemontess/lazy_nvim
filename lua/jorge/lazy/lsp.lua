@@ -27,6 +27,7 @@ return {
                 "ts_ls",
                 "gopls",
                 "pyright",
+                "bashls",
                 "lua_ls",
                 "clangd",
             }
@@ -36,6 +37,7 @@ return {
         -- Setup language servers.
         local lspconfig = require('lspconfig')
         lspconfig.pyright.setup {}
+        lspconfig.bashls.setup {}
         lspconfig.ts_ls.setup {}
         lspconfig.rust_analyzer.setup {
             -- Server-specific settings. See `:help lspconfig-setup`
@@ -158,6 +160,10 @@ return {
         }
 
         require('lspconfig')['pyright'].setup {
+            capabilities = capabilities
+        }
+
+        require('lspconfig')['bashls'].setup {
             capabilities = capabilities
         }
 
