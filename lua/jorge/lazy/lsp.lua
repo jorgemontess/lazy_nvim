@@ -26,6 +26,7 @@ return {
                 "rust_analyzer",
                 "ts_ls",
                 "gopls",
+                "dockerls",
                 "pyright",
                 "bashls",
                 "lua_ls",
@@ -39,6 +40,7 @@ return {
         lspconfig.pyright.setup {}
         lspconfig.bashls.setup {}
         lspconfig.ts_ls.setup {}
+        lspconfig.dockerls.setup {}
         lspconfig.rust_analyzer.setup {
             -- Server-specific settings. See `:help lspconfig-setup`
             settings = {
@@ -179,5 +181,8 @@ return {
             capabilities = capabilities
         }
 
+        require('lspconfig')['dockerls'].setup {
+            capabilities = capabilities
+        }
     end
 }
