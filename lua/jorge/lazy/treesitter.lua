@@ -21,12 +21,13 @@ return{
                 "php",
                 "astro",
                 "http",
+                "dockerfile",
                 "gitcommit",
                 "gitignore",
             },
           sync_install = false,
           highlight = { enable = true },
-          indent = { enable = true },  
+          indent = { enable = true },
         })
     end
 }
