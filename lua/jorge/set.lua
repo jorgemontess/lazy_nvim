@@ -34,3 +34,23 @@ vim.opt.colorcolumn = "80"
 --vim.opt.clipboard:append("unnamedplus") -- Use system clipboard as default register
 --vim.opt.backspace = "indent,eol,start" -- allow backspace on indent end of line or instert
 --vim.opt.background = "dark" -- Colorscheme that can be light or dark will be made dark
+
+-- overrides por filetype
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "yaml", "yml", "json", "javascript", "typescript", "html", "css", "terraform", "hcl" },
+  callback = function()
+    vim.opt_local.shiftwidth  = 2
+    vim.opt_local.softtabstop = 2
+    vim.opt_local.tabstop     = 2
+  end,
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "python", "lua", "c", "cpp", "java", "sh", "bash", "dockerfile" },
+  callback = function()
+    vim.opt_local.shiftwidth  = 4
+    vim.opt_local.softtabstop = 4
+    vim.opt_local.tabstop     = 4
+  end,
+})
+
